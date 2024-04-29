@@ -37,7 +37,7 @@ public class HumanEntityCSVReader {
                     String birthDate = nextLine[3];
                     DepartmentEntity department = DepartmentEntity.fetchDepartment(nextLine[4]);
                     double salary = Double.parseDouble(nextLine[5]);
-                    HumanEntity humanEntity = new HumanEntity(id, name, gender, department, salary, birthDate);
+                    HumanEntity humanEntity = new HumanEntity(id, name, gender,birthDate, department, salary);
                     humanEntityList.add(humanEntity);
                 }
             }

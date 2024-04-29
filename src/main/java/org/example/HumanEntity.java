@@ -23,6 +23,11 @@ public class HumanEntity {
     private String personGender;
 
     /**
+     * The birthdate of the person.
+     */
+    private LocalDate dateOfBirth;
+
+    /**
      * The department associated with the person.
      */
     private DepartmentEntity associatedDepartment;
@@ -31,11 +36,6 @@ public class HumanEntity {
      * The annual salary of the person.
      */
     private double annualSalary;
-
-    /**
-     * The birthdate of the person.
-     */
-    private LocalDate dateOfBirth;
 
     private static final DateTimeFormatter DATE_FORMATTER = DateTimeFormatter.ofPattern("dd.MM.yyyy");
 
@@ -49,7 +49,7 @@ public class HumanEntity {
      * @param salary the annual salary of the person
      * @param birthDate the birthdate of the person in "dd-MM-yyyy" format
      */
-    public HumanEntity(int id, String name, String gender, DepartmentEntity department, double salary, String birthDate) {
+    public HumanEntity(int id, String name, String gender, String birthDate, DepartmentEntity department, double salary) {
         this.personId = id;
         this.personName = name;
         this.personGender = gender;
