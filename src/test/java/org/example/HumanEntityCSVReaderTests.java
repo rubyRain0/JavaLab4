@@ -2,6 +2,7 @@ package org.example;
 
 import com.opencsv.exceptions.CsvValidationException;
 import org.junit.jupiter.api.Test;
+import org.example.HumanEntity;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -13,7 +14,7 @@ import static org.junit.jupiter.api.Assertions.*;
  * This class contains test methods for the HumanEntityCSVReader class.
  * It tests the functionality of reading human entities from a CSV file.
  */
-class HumanEntityCSVReaderTests {
+public class HumanEntityCSVReaderTests {
 
     /**
      * This method tests the readFromCSV method of the HumanEntityCSVReader class.
